@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solutions</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/5004909c04.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Styles -->
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
+    <!-- Customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#B68C5A",
+              "overlay-color": "rgba(0, 0, 0, 0.4)",
+              "card-gradient1":"rgb(243, 243, 243)",
+              "card-gradient2":"rgba(243, 243, 243, 0)",
+            },
+            backgroundImage: {
+              bannerBg: "url('./images/banner.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-garamond w-full p-4 md:container mx-auto">
+    <header>
+      <nav class="flex justify-between items-center my-6">
+        <div class="flex justify-start">
+          <img src="./images/logo2.png" alt="" />
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex gap-6 text-lg">
+            <a href="">
+              <li>Home</li>
+            </a>
+            <a href="">
+              <li>Services <i class="fa-solid fa-angle-right"></i></li>
+            </a>
+            <a href="">
+              <li>Cases <i class="fa-solid fa-angle-right"></i></li>
+            </a>
+            <a href="">
+              <li>Blog <i class="fa-solid fa-angle-right"></i></li>
+            </a>
+            <a href="">
+              <li>Contact Us <i class="fa-solid fa-angle-right"></i></li>
+            </a>
+          </ul>
+        </div>
+        <div>
+          <button class="btn bg-primary-color text-white text-lg">
+            Free Consultation
+          </button>
+        </div>
+      </nav>
+      <div
+        class="bg-bannerBg h-[550px] bg-no-repeat bg-cover text-center flex flex-col justify-center bg-overlay-color bg-blend-overlay mt-20"
+      >
+        <h1 class="text-4xl md:text-5xl lg:text-7xl text-white font-bold">
+          We Provide Effective <br />
+          Legal Solutions
+        </h1>
+        <p class="text-white text-xl mx-auto py-6 w-4/5">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority <br />
+          have suffered alteration in some form, by injected humour.
+        </p>
+        <div>
+          <input
+            type="search"
+            class="py-3 pr-24 pl-4 rounded-lg text-left outline-none mr-4 sm:mb-4"
+            placeholder="search your services"
+          />
+          <button class="btn bg-primary-color text-white font-bold border-none mt-8 md:mt-0">
+            SEARCH
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- The Legal Practice area -->
+      <section class="my-20">
+        <div class="text-center">
+          <h3 class="text-5xl">The Legal Practice Area</h3>
+          <p class="text-lg mt-8 mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <!-- Cards -->
+         <div class="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+          <!-- Card 1 -->
+        
+           <div class="space-y-4 shadow-lg md:shadow-none py-16 w-96">
+            <div class=" w-max mx-auto">
+              <img src="./images/business.png" alt="">
+            </div>
+            <h4 class="text-3xl">Business Law</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+           <!-- Card 2 -->
+          
+           <div class="space-y-4 py-16 w-96 shadow-lg lg:shadow-none  lg:bg-gradient-to-r from-[#F3F3F3] from-10% to-[#F3F3F3] to-100% ">
+            <div class=" w-max mx-auto">
+              <img src="./images/criminal.png" alt="">
+            </div>
+            <h4 class="text-3xl">Criminal Law</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+           <!-- Card 3 -->
+           <div class="space-y-4 shadow-lg lg:shadow-none py-16 mt-10 w-96">
+            <div class=" w-max mx-auto">
+              <img src="./images/child.png" alt="">
+            </div>
+            <h4 class="text-3xl">Child Support</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+           <!-- Card 4 -->
+           <div class="space-y-4 shadow-lg md:shadow-none py-16 mt-10 w-96 lg:bg-gradient-to-r from-[#F3F3F3] from-10% to-[#F3F3F3] to-100%">
+            <div class=" w-max mx-auto">
+              <img src="./images/education.png" alt="">
+            </div>
+            <h4 class="text-3xl">Education Law</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+           <!-- Card 5-->
+           <div class="space-y-4 shadow-lg md:shadow-none py-16 mt-10 w-96">
+            <div class=" w-max mx-auto">
+              <img src="./images/divorce.png" alt="">
+            </div>
+            <h4 class="text-3xl">Divorce Law</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+           <!-- Card 6 -->
+           <div class="space-y-4 shadow-lg lg:shadow-none py-16 mt-10 w-96 lg:bg-gradient-to-r from-[#F3F3F3] from-10% to-[#F3F3F3] to-100%">
+            <div class=" w-max mx-auto">
+              <img src="./images/tax.png" alt="">
+            </div>
+            <h4 class="text-3xl">Tax Law</h4>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <button class="btn btn-circle bg-primary-color text-white font-bold">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </button>
+           </div>
+
+         </div>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+</html>
